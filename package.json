@@ -1,0 +1,29 @@
+{
+  "name": "1_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "dotenv": "^14.2.0",
+    "nodemon": "^2.0.15",
+    "seeder": "^0.2.4",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4",
+    "router": "^1.3.6"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}

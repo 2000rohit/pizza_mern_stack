@@ -1,0 +1,15 @@
+h1 {
+  font-size: 20px;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container .btn {
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+}
+select {
+  box-shadow: none;
+  border-color: black;
+}
