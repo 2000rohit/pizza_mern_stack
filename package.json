@@ -1,19 +1,20 @@
 {
-  "name": "pizza",
+  "name": "1_project",
   "version": "1.0.0",
-  "description": "Pizaa shopping cart app",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run start --prefix frontend"
   },
-  "author": "Rohit Prasad",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "concurrently": "^7.0.0",
     "dotenv": "^14.2.0",
